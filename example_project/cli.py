@@ -14,6 +14,7 @@ def main():
     print("Arguments: " + str(args._))
     print("Replace this message by putting your code into "
           "example_project.cli.main")
+    print("How could I ever be rude to you?")
     return 0
 
 
