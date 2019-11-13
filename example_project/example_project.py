@@ -11,6 +11,19 @@ def fahrToKelv(temp):
 
     return kelvin
 
+
+def potTemp(t, p):
+    
+    # Computes potential temperature for given temperature t (in K) and pressure p (in hPa)
+    # assuming standard air surface pressure
+    
+    p0 = 1013.25
+    r_cp = 0.286
+    
+    theta = T * (p0/p)**r_cp
+    
+    return(theta)
+
 def KelvTofahr(temp):
     """
     takes a temperature `temp` in Kelvin and returns fahrenheit 
@@ -22,4 +35,5 @@ def KelvTofahr(temp):
     return fahr
 
 print('hello')
+
 
