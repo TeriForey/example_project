@@ -11,4 +11,15 @@ def fahrToKelv(temp):
 
     return kelvin
 
+def KelvTofahr(temp):
+    """
+    takes a temperature `temp` in Kelvin and returns fahrenheit 
+    """
+    
+    fahr = (temp + 32.) * 9/5. - 273.15
+
+
+    return fahr
+
 print('hello')
+
